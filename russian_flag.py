@@ -6,10 +6,9 @@ screen = pygame.display.set_mode(size)
 
 
 def draw():
-    # Устанавливаем параметры кирпичей и прослойки между ними
-    rect_color1 = pygame.Color('red')
-    rect_color2 = pygame.Color('white')
-    rect_color3 = pygame.Color('blue')
+    rect_color1 = pygame.Color('white')
+    rect_color2 = pygame.Color('blue')
+    rect_color3 = pygame.Color('red')
     rect_width = 0
     step = 100
     rect_point1 = [(step, step), (300, 100)]
