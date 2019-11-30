@@ -7,12 +7,16 @@ screen = pygame.display.set_mode(size)
 
 def draw():
     # Устанавливаем параметры кирпичей и прослойки между ними
-    rect_color = pygame.Color('red')
+    rect_color1 = pygame.Color('red')
+    rect_color2 = pygame.Color('blue')
     rect_width = 0
     step = 100
     rect_point = [(step, step), (300, 100)]
     # Рисуем прямоугольник
-    pygame.draw.rect(screen, rect_color, rect_point, rect_width)
+    pygame.draw.rect(screen, rect_color1, rect_point, rect_width)
+    rect_point = [(step, step+100), (300, 100)]
+    # Рисуем прямоугольник
+    pygame.draw.rect(screen, rect_color2, rect_point, rect_width)
 
 
 
